@@ -1,0 +1,328 @@
+/* Pongo el header en la esquina superior derecha*/
+/* y a las listas le saco el estilo y decoracion*/
+* {
+    margin: 0;
+    padding: 0;
+    /*text-decoration: none;*/
+    list-style-type: none;
+    font-family: roboto, sans-serif;
+}
+
+/* estilo del header*/
+
+body a /* lo saco del principio porque bootstrap lo anulaba*/
+{
+    text-decoration: none;
+    
+}
+header {
+    background-size: cover;
+    background-color: white;
+    /* position: fixed; no va porque la img le pasa por arriba al menu y no scrolea*/
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* este margin lo tengo que sacar cuando todos sean responsive*/
+header img {
+    margin-left: 240px;
+}
+
+header img {
+    margin-left: 240px;
+    margin-right: 100px;
+}
+
+/* hasta donde marco lo tengo que sacar cuando todos los header sean responsive*/
+.elmenu {
+    display: flex;
+    flex-direction: row;
+    font-family: roboto;
+    justify-content: space-around;
+   /* margin-inline-end: 10px;*/
+    /* menu volcado a la derecha y el padding lo centra*/
+    padding-right: 300px;
+}
+
+.elmenu li a {
+    color: black;
+    font-weight: bold;
+    /* el elemento a en linea lo hace bloque para separarlos con padding */
+    display: block;
+    padding: 20px;
+}
+
+header nav ul li a:hover {
+    color: rgb(95, 112, 207);
+}
+/* Hasta aca tengo que sacar cuando el header sea responsive*/
+
+.navbar-icono-mio
+{
+    background-image: url(../images/hamburgermenu_120234.svg) ;
+}
+.el-menu ul li a 
+{
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+   
+}
+
+.el-menu ul li a:hover 
+{
+    color: rgb(95, 112, 207);
+}
+
+/* la media query es para el menu hamburguer y otras secciones que lo requieran */
+
+@media (max-width: 992px){
+    .navcollapse{
+        /* con relative tira para abajo el carousel*/
+        position: absolute;
+        top: 77px;
+        left: 0;
+        /*En elementos que se superponen los de mayor z-index 
+        cubren los de menor valor*/
+        z-index: 1;
+        background-color: black;
+        width: 70%;
+        height: 100vw;
+        opacity: 0.5;
+    }
+    .el-menu ul li a 
+    {
+        color: white;
+    }
+    .mi-margen
+    {
+        margin-left: 10px;
+    }
+    .mi-deco-pie
+    {
+        text-align: center !important;
+    }
+    .mi-deco-redes
+    {
+       display: flex;
+       justify-content: center;
+    }
+
+    /*agrego 3 clases para SN */
+    .mi-vp
+    {
+        width: 100vw;
+    }
+    .mi-estilo-h
+    {
+        margin-top: 50px !important;
+    }
+    .mi-estilo-p
+    {
+        padding: 25px !important;
+    }
+}
+
+
+/* trabajando en el main*/
+
+.imgtxt h1 {
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    padding-top: 10rem;
+    padding-left: 32rem;
+    text-align: center;
+}
+
+.imgtxt p {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    padding-top: 20rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    text-align: center;
+}
+
+.imgtxt img {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.cuatroiconos {
+    padding: 20px 0px 0px 0px;
+}
+
+.cuatroiconos .i2 {
+    display: inline-block;
+}
+
+.i1 img:hover {
+    cursor: pointer;
+
+}
+
+.i2 {
+    padding: 0px 100px 0px 150px;
+}
+
+
+
+
+
+/* la experiencia html */
+
+.tcontorno
+{
+    width: 700px;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+    position:  relative;
+    top: 100px;
+    left: 400px;
+   
+}
+.tcontorno h2 {
+    color: white;
+    font-size: 3rem;
+    font-style: initial;
+  }
+
+.tcontorno p {
+    color: white;
+    font-size: 32px;
+    line-height: 50px;
+  
+}
+
+.img-txtle {
+  /* Contenedor definiendo en el Div una clase */
+    width: 1600px;
+    height: 1000px;
+    background-image: url(../images/degustaciona25.jpg);
+    background-size: cover;
+}
+
+
+/* LA DEGUSTACION HTML */
+
+.imgtxtld img {
+    overflow: hidden;
+    opacity: 0.1;
+}
+
+.imgtxtld h2 {
+    color: black;
+    font-size: 4rem;
+ font-family: 'Times New Roman';
+    position: absolute;
+    padding: 7rem 0rem 0rem 7rem;
+    border: 0px 0px 6px;
+
+}
+
+.imgtxtld p {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    padding: 7rem 10rem 0rem 55rem;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+/* LA UBICACION HTML */
+
+section
+{
+    margin: 2rem 0rem 0rem 4rem;
+  
+}
+
+.mi-margen-carous /* margen del carousel*/
+{
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+
+.t-lau-h {
+    color: black;
+    font-size: 32px;
+    font-style: initial;
+    /* position: absolute; no puede ir 
+   se posiciona debajo del footer*/
+   /* los saco cuando uso bootstrap
+    padding-top: 10rem;
+    padding-left: 43rem;
+    */
+}
+
+.t-lau-p {
+    color: black;
+    font-size: 20px;
+    /* position: absolute; idem h*/
+   /* los saco cuando uso bootstrap
+    padding: 2rem 20rem 0rem 25rem;
+    text-align: center;*/
+}
+
+/* SOBRE NOSOTROS HTML */
+
+.mi-f-padd
+{
+    padding-top: 60px;
+    padding-right: 50px;
+    
+}
+
+/* efecto sombra*/
+.mi-shadow
+{
+    border-radius: 50%;
+    box-shadow: 60px -40px rgb(78, 77, 77);
+}
+.mi-estilo-h
+{
+    margin-top: 250px;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 1.1;
+}
+.mi-estilo-p
+{
+    line-height: 40px;
+    padding: 25px 100px 0px 0px;
+    font-size: 20px;
+}
+
+.mi-v-snos
+{
+    margin-bottom: 60px;
+    
+}
+.mi-v-snos video
+{
+    border: double black;
+}
+
+
+/* TRABAJANDO EN EL FOOTER*/
+
+.mi-deco-pie
+    {
+        font-weight: bold;
+    }
+
+.mi-deco-mail
+{
+    /*text-decoration: none;*/
+    color: black;
