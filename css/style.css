@@ -61,7 +61,7 @@ header nav ul li a:hover {
 
 .navbar-icono-mio
 {
-    background-image: url(../images/hamburgermenu_120234.svg) ;
+    background-image: url(.././images/hamburgermenu_120234.svg) ;
 }
 .el-menu ul li a 
 {
@@ -77,6 +77,7 @@ header nav ul li a:hover {
 {
     color: rgb(95, 112, 207);
 }
+
 
 /* la media query es para el menu hamburguer y otras secciones que lo requieran */
 
