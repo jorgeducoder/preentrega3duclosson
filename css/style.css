@@ -325,5 +325,6 @@ section
 
 .mi-deco-mail
 {
-    /*text-decoration: none;*/
+    text-decoration: underline;
     color: black;
+}
