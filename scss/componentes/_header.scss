@@ -1,0 +1,138 @@
+* {
+    margin: map-get($inicio-header, mrg);
+    padding: map-get($inicio-header, padd);
+    /*text-decoration: none;*/
+    list-style-type: map-get($inicio-header, lst-style);
+    font-family: map-get($inicio-header, fuente);
+}
+
+a /* lo saco del principio porque bootstrap lo anulaba*/
+{
+    text-decoration: $no-decoracion-a;
+    
+}
+
+header {
+    background-size: cover;
+    background-color: white;
+    /* position: fixed; no va porque la img le pasa por arriba al menu
+     y no scrolea */
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+       img {
+        /* este margin left lo tengo que sacar cuando todos sean 
+        responsive, se repite con el de abajo*/
+        margin-left: 240px;
+        margin-right: 100px;
+        }
+    }
+ /* margin-left: 240px;  Lo saco para que el icono en celu se corra 
+ a la izquierd en la media query, falta centrarlo y ajustar el hamburguer*/
+   
+/* hasta donde marco lo tengo que sacar cuando todos los header sean responsive*/
+.elmenu {
+    display: flex;
+    flex-direction: row;
+    font-family: roboto;
+    justify-content: space-around;
+   /* margin-inline-end: 10px;*/
+    /* menu volcado a la derecha y el padding lo centra*/
+    padding-right: 300px;
+}
+.elmenu{
+        li{
+            a {
+                color: black;
+                font-weight: bold;
+                /* el elemento a en linea lo hace bloque para separarlos con padding */
+                display: block;
+                padding: 20px;
+                }       
+            }
+        }
+
+ header{
+
+         nav{
+        
+              ul{
+        
+                    li{
+                        a{
+                          &:hover {
+                            color: $color-hover-a ;
+                          }
+                        }
+                    }
+                }   
+            }
+        }
+  /* Hasta aca tengo que sacar cuando el header sea responsive*/
+             
+.navbar-icono-mio
+  {
+      background-image: url(.././images/hamburgermenu_120234.svg) ;
+  }
+
+.el-menu{
+         ul{
+             li{
+                 a
+                  {color: black;
+                    font-weight: bold;
+                    font-family: Arial, Helvetica, sans-serif;
+                    padding-left: 30px !important;
+                    padding-right: 30px !important;
+                  }
+                  a{
+                    &:hover 
+                      {
+                        color: $color-hover-a !important; /*si no
+                         pongo important no funciona el hover en Inicio*/
+                        }
+                    }
+                 }
+            }
+        }
+/* la media query es para el menu hamburguer y otras secciones que lo requieran */
+@media (max-width: 992px)
+{
+    /* corre el icono a la izquierda*/
+    header{
+         img {
+             margin-left: 0px;
+             margin-right: 100px;
+            }
+        }
+
+    .navcollapse{
+        /* con relative tira para abajo el carousel*/
+        position: absolute;
+        top: 77px;
+        left: 0;
+        /*En elementos que se superponen los de mayor z-index 
+        cubren los de menor valor*/
+        z-index: 1;
+        background-color: black;
+        width: 70%;
+        height: 100vw;
+        opacity: 0.5;
+    }
+.el-menu{
+        ul{
+            li{
+                 a{ 
+    
+                    color: white !important; /* si no pongo el 
+                    impotant no aparece la palabra Inicio cuando colapsa*/
+                }
+            }
+        }
+    }
+ }

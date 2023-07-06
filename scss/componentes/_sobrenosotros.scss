@@ -1,0 +1,51 @@
+/* SOBRE NOSOTROS HTML */
+
+.mi-f-padd
+{
+    padding-top: 60px;
+    padding-right: 50px;
+    
+}
+
+/* efecto sombra*/
+.mi-shadow
+{
+    border-radius: 50%;
+    box-shadow: 60px -40px rgb(78, 77, 77);
+}
+.mi-estilo-h
+{
+    margin-top: 250px;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 1.1;
+}
+.mi-estilo-p
+{
+    line-height: 40px;
+    padding: 25px 100px 0px 0px;
+    font-size: 20px;
+}
+
+.mi-v-snos{
+    margin-bottom: 60px;
+    video {
+            border: double black;
+        }
+}
+  /*agrego 3 clases para SN en la media query*/
+@media (max-width: 992px)
+{
+  .mi-vp
+  {
+      width: 100vw;
+  }
+.mi-estilo-h
+  {
+      margin-top: 50px !important;
+  }
+.mi-estilo-p
+  {
+      padding: 25px !important;
+  }
+}
