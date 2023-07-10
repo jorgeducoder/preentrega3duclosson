@@ -1,26 +1,62 @@
 /* LA DEGUSTACION HTML */
 
-.imgtxtld{
-    img {
-        overflow: hidden;
-        opacity: 0.1;
-        }
+.posicion
+    {
+        position: relative;
+        
+    }
+.opacidad{
+    opacity: 0.2;
+}
+
+.img-txt-ld{
+    position: absolute;
+    
 
     h2 {
         color: black;
-        font-size: 4rem;
+        font-size: 55px;
         font-family: 'Times New Roman';
+        font-weight: bold;
         position: absolute;
-        padding: 7rem 0rem 0rem 7rem;
-        border: 0px 0px 6px;
+        padding: 6rem 0rem 0rem 14rem;
+       /* border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: black;*/
         }
 
     p {
         color: black;
-        font-size: 20px;
+        font-size: 21px;
         position: absolute;
-        padding: 7rem 10rem 0rem 55rem;
+        padding: 6rem 14rem 0rem 55rem;
         text-align: center;
         line-height: 30px;
+    }
+}
+ /*agrego estilos para LD en la media query*/
+ @media (max-width: 992px) {
+    .img-txt-ld{
+          
+        h2 {
+            color: black;
+            font-size: 35px;
+            font-family: 'Times New Roman';
+            font-weight: bold;
+            position: absolute;
+            padding: 20px 0rem 0rem 3rem;
+           /* border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: black;*/
+            }
+    
+        p {
+            color: black;
+            font-size: 20px;
+            position: absolute;
+            padding: 70px 20px 0px 20px;
+            text-align: center;
+            line-height: 25px;
+        }
     }
 }
