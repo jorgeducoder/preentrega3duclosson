@@ -2,8 +2,9 @@
 
 .posicion
     {
+        background-image: url(../images/degustaciona25.jpg);
         position: relative;
-        
+        width: 50%;
     }
 .opacidad{
     opacity: 0.2;
@@ -20,6 +21,7 @@
         font-weight: bold;
         position: absolute;
         padding: 6rem 0rem 0rem 14rem;
+        opacity: 1;
        /* border-bottom-width: 1px;
         border-bottom-style: solid;
         border-bottom-color: black;*/
@@ -32,10 +34,11 @@
         padding: 6rem 14rem 0rem 55rem;
         text-align: center;
         line-height: 30px;
+        opacity: 1;
     }
 }
  /*agrego estilos para LD en la media query*/
- @media (max-width: 992px) {
+ @media (max-width: 800px) {
     .img-txt-ld{
           
         h2 {
@@ -52,7 +55,7 @@
     
         p {
             color: black;
-            font-size: 20px;
+            font-size: 18px;
             position: absolute;
             padding: 70px 20px 0px 20px;
             text-align: center;
