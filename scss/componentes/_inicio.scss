@@ -17,7 +17,7 @@
       
    }
 
-   .cuatroiconos {
+.cuatroiconos {
                padding: 20px 0px 0px 0px;
             }
    
@@ -35,3 +35,19 @@
 .i2 {
    padding: 0px 100px 0px 150px;
 } 
+
+
+/*agrego estilos para inicio en la media query*/
+@media (max-width: 800px) {
+   .parrafo-centrado {
+      top: 35%;
+      h1{
+         font-size: 3rem; 
+         padding-bottom: 10px;
+      }
+      p {
+         font-size: 20px;
+      }
+      
+   }
+}
