@@ -8,14 +8,14 @@
       left: 50%;
       transform: translate(-50%, -50%);
       h1{
-         font-size: 4rem; 
-         padding-bottom: 40px;
+         @extend %parrafo-centrado-h;
       }
       p {
-         font-size: 2rem;
+         @extend %parrafo-centrado-p;
       }
       
    }
+
 
 .cuatroiconos {
                padding: 20px 0px 0px 0px;

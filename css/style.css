@@ -1,3 +1,12 @@
+.parrafo-centrado h1 {
+  font-size: 4rem;
+  padding-bottom: 40px;
+}
+
+.parrafo-centrado p {
+  font-size: 2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -31,30 +40,6 @@ header img {
 
 /* margin-left: 240px;  Lo saco para que el icono en celu se corra 
 a la izquierd en la media query, falta centrarlo y ajustar el hamburguer*/
-/* hasta donde marco lo tengo que sacar cuando todos los header sean responsive*/
-.elmenu {
-  display: flex;
-  flex-direction: row;
-  font-family: roboto;
-  justify-content: space-around;
-  /* margin-inline-end: 10px;*/
-  /* menu volcado a la derecha y el padding lo centra*/
-  padding-right: 300px;
-}
-
-.elmenu li a {
-  color: black;
-  font-weight: bold;
-  /* el elemento a en linea lo hace bloque para separarlos con padding */
-  display: block;
-  padding: 20px;
-}
-
-header nav ul li a:hover {
-  color: rgb(54, 197, 178);
-}
-
-/* Hasta aca tengo que sacar cuando el header sea responsive*/
 .navbar-icono-mio {
   background-image: url(.././images/hamburgermenu_120234.svg);
 }
@@ -88,7 +73,7 @@ pongo important no funciona el hover en Inicio*/
     z-index: 1;
     background-color: black;
     width: 70%;
-    height: 100vw;
+    height: 100vh;
     opacity: 0.5;
   }
   .el-menu ul li a {
@@ -127,14 +112,6 @@ impotant no aparece la palabra Inicio cuando colapsa*/
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.parrafo-centrado h1 {
-  font-size: 4rem;
-  padding-bottom: 40px;
-}
-.parrafo-centrado p {
-  font-size: 2rem;
-}
-
 .cuatroiconos {
   padding: 20px 0px 0px 0px;
 }
@@ -245,7 +222,7 @@ impotant no aparece la palabra Inicio cuando colapsa*/
   text-align: center;
   line-height: 30px;
   opacity: 1;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 /*agrego estilos para LD en la media query*/

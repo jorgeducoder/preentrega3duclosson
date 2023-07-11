@@ -35,45 +35,7 @@ header {
  /* margin-left: 240px;  Lo saco para que el icono en celu se corra 
  a la izquierd en la media query, falta centrarlo y ajustar el hamburguer*/
    
-/* hasta donde marco lo tengo que sacar cuando todos los header sean responsive*/
-.elmenu {
-    display: flex;
-    flex-direction: row;
-    font-family: roboto;
-    justify-content: space-around;
-   /* margin-inline-end: 10px;*/
-    /* menu volcado a la derecha y el padding lo centra*/
-    padding-right: 300px;
-}
-.elmenu{
-        li{
-            a {
-                color: black;
-                font-weight: bold;
-                /* el elemento a en linea lo hace bloque para separarlos con padding */
-                display: block;
-                padding: 20px;
-                }       
-            }
-        }
 
- header{
-
-         nav{
-        
-              ul{
-        
-                    li{
-                        a{
-                          &:hover {
-                            color: $color-hover-a ;
-                          }
-                        }
-                    }
-                }   
-            }
-        }
-  /* Hasta aca tengo que sacar cuando el header sea responsive*/
              
 .navbar-icono-mio
   {
@@ -112,18 +74,9 @@ header {
         }
 
     .navcollapse{
-        /* con relative tira para abajo el carousel*/
-        position: absolute;
-        top: 77px;
-        left: 0;
-        /*En elementos que se superponen los de mayor z-index 
-        cubren los de menor valor*/
-        z-index: 1;
-        background-color: black;
-        width: 70%;
-        height: 100vw;
-        opacity: 0.5;
+        @include navcolapsa();
     }
+  
 .el-menu{
         ul{
             li{
