@@ -1,7 +1,10 @@
    /* la experiencia html */
 
    .tcontorno {
-    /*width: 700px;*/
+    width: 700px;
+    height: 500px;
+    margin-top: 80px;
+    margin-bottom: 100px;
     border: 5px solid white;
    /* display: flex;
     flex-direction: column;*/
@@ -10,6 +13,7 @@
     /*position:  absolute;*/
     top: 100px;
     left: 400px;
+    justify-content: center;
     h2{ 
             color: white;
             font-size: 3rem;
@@ -17,16 +21,18 @@
         }
     p {
             color: white;
-            font-size: 32px;
-            line-height: 50px;
+            font-size: 25px;
+            line-height: 36px;
         }
 }      
 .img-txtle {
     /* Contenedor definiendo en el Div una clase */
       position: relative;
-      height: 1000px;
+      width: 100%;
+      height: auto;
       background-image: url(../images/degustaciona25.jpg);
       background-size: cover;
       display: flex;
       justify-content: center;
+      padding-right: 0px;
   }
