@@ -12,18 +12,28 @@
 .img-txt-ld{
     position: relative;
   }
-  
- .img.txt.ld::before {
+  .img-txt-ld::before {
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-image: url(../images/degustaciona25.jpg);
-    background-size: cover;
+    background-size: cover;  background-size: cover;
     opacity: 0.2; /* Ajusta la opacidad según tus necesidades */
     z-index: -1;
-  
+  }
+  .img-txt-ld::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*background-color: rgba(0, 0, 0, 0.229); /* Ajusta la opacidad del fondo */
+    z-index: -1;
+  }
 /*.img-txt-ld{
       position: relative;
       width: 100%;
@@ -36,12 +46,14 @@
       /*padding-right: 0px;
       /*opacity: 0.3;*/
       /*color: white;*/
-    h2 {
+    .img-txt-ld{
+      h2 {
         color: black;
         font-size: 55px;
         font-family: 'Times New Roman';
         font-weight: bold;
         position: absolute;
+        /*position: relative;*/
         padding: 6rem 0rem 0rem 14rem;
         /*opacity: 1;*/
        /* border-bottom-width: 1px;
@@ -52,16 +64,18 @@
     p {
         color: black;
         font-size: 21px;
-        position: absolute;
+        /*position: absolute;*/
+        position: relative;
         padding: 6rem 14rem 0rem 55rem;
         text-align: center;
         line-height: 30px;
        /*opacity: 1;*/
-        font-weight: 900;
+        font-weight: bold;
     }
 }
  /*agrego estilos para LD en la media query*/
  @media (max-width: 800px) {
+   
     .img-txt-ld{
           
         h2 {

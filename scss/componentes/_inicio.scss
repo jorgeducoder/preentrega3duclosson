@@ -16,6 +16,35 @@
       
    }
 
+   /* botones */
+   .btn-grupo {
+      padding-left: 30%;
+      padding-top: 20px;
+   }
+
+   .btn-grupo .boton {
+      background-color: transparent;
+      border: 3px solid white;
+      color: white;
+      padding: 12px 26px;
+      text-align: center;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: roboto;
+      cursor: pointer;
+      border-radius: 30px;
+      justify-content: center;
+      }
+      .btn-grupo .boton:not(:last-child){
+         
+         margin-right: 10px;
+      }
+      
+      .btn-grupo .boton:hover{
+         background-color: white;
+         color: black;
+      }
 
 .cuatroiconos {
                padding: 20px 0px 0px 0px;
@@ -35,6 +64,7 @@
 .i2 {
    padding: 0px 100px 0px 150px;
 } 
+
 
 
 /*agrego estilos para inicio en la media query*/
