@@ -52,7 +52,7 @@ a la izquierd en la media query, falta centrarlo y ajustar el hamburguer*/
   padding-right: 30px !important;
 }
 .el-menu ul li a:hover {
-  color: rgb(54, 197, 178) !important; /*si no
+  color: rgb(121, 100, 241) !important; /*si no
 pongo important no funciona el hover en Inicio*/
 }
 
@@ -195,12 +195,14 @@ impotant no aparece la palabra Inicio cuando colapsa*/
   position: relative;
   width: 100%;
   height: 800px;
-  background-image: url(../images/degustaciona25.jpg);
-  background-size: cover;
+  /*background-image: url(../images/degustaciona25.jpg);
+  background-size: cover;*/
+  background: rgba(0, 0, 0, 0.5) url("../images/degustaciona25.jpg") center/cover no-repeat;
   /*display: flex;
   justify-content: center;*/
   padding-right: 0px;
-  opacity: 0.3;
+  /*opacity: 0.3;*/
+  color: white;
 }
 .img-txt-ld h2 {
   color: black;
@@ -209,7 +211,7 @@ impotant no aparece la palabra Inicio cuando colapsa*/
   font-weight: bold;
   position: absolute;
   padding: 6rem 0rem 0rem 14rem;
-  opacity: 1;
+  /*opacity: 1;*/
   /* border-bottom-width: 1px;
    border-bottom-style: solid;
    border-bottom-color: black;*/
@@ -221,7 +223,7 @@ impotant no aparece la palabra Inicio cuando colapsa*/
   padding: 6rem 14rem 0rem 55rem;
   text-align: center;
   line-height: 30px;
-  opacity: 1;
+  /*opacity: 1;*/
   font-weight: 900;
 }
 
