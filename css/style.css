@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .parrafo-centrado h1 {
   font-size: 4rem;
   padding-bottom: 40px;
@@ -193,18 +194,32 @@ impotant no aparece la palabra Inicio cuando colapsa*/
 }*/
 .img-txt-ld {
   position: relative;
-  width: 100%;
-  height: 800px;
-  /*background-image: url(../images/degustaciona25.jpg);
-  background-size: cover;*/
-  background: rgba(0, 0, 0, 0.5) url("../images/degustaciona25.jpg") center/cover no-repeat;
+}
+
+.img.txt.ld::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/degustaciona25.jpg);
+  background-size: cover;
+  opacity: 0.2; /* Ajusta la opacidad según tus necesidades */
+  z-index: -1;
+  /*.img-txt-ld{
+        position: relative;
+        width: 100%;
+        height: 800px;
+        /*background-image: url(../images/degustaciona25.jpg);
+        background-size: cover;*/
+  /*background: rgba(0, 0, 0, 0.5) url(../images/degustaciona25.jpg) center/cover no-repeat;*/
   /*display: flex;
   justify-content: center;*/
-  padding-right: 0px;
+  /*padding-right: 0px;
   /*opacity: 0.3;*/
-  color: white;
+  /*color: white;*/
 }
-.img-txt-ld h2 {
+.img.txt.ld::before h2 {
   color: black;
   font-size: 55px;
   font-family: "Times New Roman";
@@ -216,7 +231,7 @@ impotant no aparece la palabra Inicio cuando colapsa*/
    border-bottom-style: solid;
    border-bottom-color: black;*/
 }
-.img-txt-ld p {
+.img.txt.ld::before p {
   color: black;
   font-size: 21px;
   position: absolute;
