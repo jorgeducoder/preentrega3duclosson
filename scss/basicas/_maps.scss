@@ -3,4 +3,6 @@ $inicio-header:(
     padd: 0,
     lst-style: none,
     fuente: roboto sans-seriff,
+   /* oflowx: hidden, lo tengo que sacar porque rompe el header en el responsive*/
+    
 );

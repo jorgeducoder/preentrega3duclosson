@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .parrafo-centrado h1 {
   font-size: 4rem;
   padding-bottom: 40px;
@@ -14,6 +13,7 @@
   /*text-decoration: none;*/
   list-style-type: none;
   font-family: roboto sans-seriff;
+  /*overflow-x: map-get($inicio-header, oflowx); lo tengo que sacar porque rompe el header en el responsive*/
 }
 
 a {
@@ -58,7 +58,7 @@ pongo important no funciona el hover en Inicio*/
 }
 
 /* la media query es para el menu hamburguer y otras secciones que lo requieran */
-@media (max-width: 992px) {
+@media (max-width: 800px) {
   /* corre el icono a la izquierda*/
   header img {
     margin-left: 0px;
@@ -213,68 +213,23 @@ impotant no aparece la palabra Inicio cuando colapsa*/
 }
 
 /* LA DEGUSTACION HTML */
-/*.posicion
-    {
-        background-image: url(../images/degustaciona25.jpg);
-        position: relative;
-        width: 50%;
-    }
-.opacidad{
-    opacity: 0.2;
-}*/
 .img-txt-ld {
-  position: relative;
-}
-
-.img-txt-ld::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url(../images/degustaciona25.jpg);
+  /*position: absolute; se ve la imagen pero el footer se coloca por encima*/
+  width: 100%;
+  height: auto;
+  background-image: url(../images/degustaciona25opacity.png);
   background-size: cover;
-  background-size: cover;
-  opacity: 0.2; /* Ajusta la opacidad según tus necesidades */
-  z-index: -1;
+  display: flex;
+  justify-content: center;
 }
-
-.img-txt-ld::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  /*background-color: rgba(0, 0, 0, 0.229); /* Ajusta la opacidad del fondo */
-  z-index: -1;
-}
-
-/*.img-txt-ld{
-      position: relative;
-      width: 100%;
-      height: 800px;
-      /*background-image: url(../images/degustaciona25.jpg);
-      background-size: cover;*/
-/*background: rgba(0, 0, 0, 0.5) url(../images/degustaciona25.jpg) center/cover no-repeat;*/
-/*display: flex;
-justify-content: center;*/
-/*padding-right: 0px;
-/*opacity: 0.3;*/
-/*color: white;*/
 .img-txt-ld h2 {
   color: black;
   font-size: 55px;
   font-family: "Times New Roman";
   font-weight: bold;
   position: absolute;
-  /*position: relative;*/
+  /*position: relative; con posicion relative en H y P el H ocupa todo el ancho de la pantalla y baja el P */
   padding: 6rem 0rem 0rem 14rem;
-  /*opacity: 1;*/
-  /* border-bottom-width: 1px;
-   border-bottom-style: solid;
-   border-bottom-color: black;*/
 }
 .img-txt-ld p {
   color: black;
@@ -284,7 +239,6 @@ justify-content: center;*/
   padding: 6rem 14rem 0rem 55rem;
   text-align: center;
   line-height: 30px;
-  /*opacity: 1;*/
   font-weight: bold;
 }
 
@@ -295,16 +249,13 @@ justify-content: center;*/
     font-size: 35px;
     font-family: "Times New Roman";
     font-weight: bold;
-    position: absolute;
+    /*position: absolute; sin posicionamiento en H y P son responsivos*/
     padding: 20px 0rem 0rem 3rem;
-    /* border-bottom-width: 1px;
-     border-bottom-style: solid;
-     border-bottom-color: black;*/
   }
   .img-txt-ld p {
     color: black;
     font-size: 18px;
-    position: absolute;
+    /* position: absolute;*/
     padding: 70px 20px 0px 20px;
     text-align: center;
     line-height: 25px;
