@@ -2,7 +2,7 @@
 
 .mi-f-padd
 {
-    padding-top: 60px;
+    padding-top: 100px;
     padding-right: 50px;
     
 }
@@ -19,12 +19,14 @@
     font-weight: 400;
     font-size: 4.5rem;
     line-height: 1.1;
+    
 }
 .mi-estilo-p
 {
     line-height: 40px;
     padding: 25px 100px 0px 0px;
     font-size: 20px;
+    
 }
 
 .mi-v-snos{
@@ -34,18 +36,42 @@
         }
 }
   /*agrego 3 clases para SN en la media query*/
-@media (max-width: 992px)
+@media (max-width: 800px)
 {
+  .margen0 {
+    margin: 30px, 0px, 0px, 0px !important;
+  }
   .mi-vp
   {
       width: 100vw;
   }
+
+  .mi-f-padd{
+    padding: 0px;
+  }
+  .mi-f-padd{
+    img {
+      height: auto;
+    }
+  }
+
 .mi-estilo-h
   {
-      margin-top: 50px !important;
+      margin-top: 100px !important;
+      font-weight: 100;
+      font-size: 2rem;
+       /*line-height: 1.1;*/
   }
 .mi-estilo-p
   {
-      padding: 25px !important;
+      padding: 0px !important;
+     line-height: 20px;
+      
+      font-size: 15px;
   }
+  .mi-shadow
+{
+    border-radius: 50%;
+    box-shadow: 30px -20px rgb(78, 77, 77);
+}
 }
