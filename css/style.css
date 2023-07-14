@@ -287,12 +287,14 @@ impotant no aparece la palabra Inicio cuando colapsa*/
 }
 /* LA UBICACION HTML */
 section {
-  margin: 2rem 0rem 0rem 4rem;
+  /* margin: 2rem 0rem 0rem 4rem;*/
+  margin: 2rem 0rem 0rem 0rem;
 }
 
 .mi-margen-carous {
   margin-top: 60px;
   margin-bottom: 60px;
+  margin-left: 64px;
 }
 
 .t-lau-h {
@@ -302,9 +304,9 @@ section {
   /* position: absolute; no puede ir 
   se posiciona debajo del footer*/
   /* los saco cuando uso bootstrap
-   padding-top: 10rem;
-   padding-left: 43rem;
-   */
+  padding-top: 10rem;
+  padding-left: 43rem;
+  */
 }
 
 .t-lau-p {
@@ -312,10 +314,21 @@ section {
   font-size: 20px;
   /* position: absolute; idem h*/
   /* los saco cuando uso bootstrap
-   padding: 2rem 20rem 0rem 25rem;
-   text-align: center;*/
+  padding: 2rem 20rem 0rem 25rem;
+  text-align: center;*/
 }
 
+/*@media (max-width: 800px) {
+
+    .mi-margen-carous
+
+    /* margen del carousel
+        {
+
+        margin-right: 64px;
+
+    }
+}*/
 /* SOBRE NOSOTROS HTML */
 .mi-f-padd {
   padding-top: 100px;
@@ -333,16 +346,19 @@ section {
   font-weight: 400;
   font-size: 4.5rem;
   line-height: 1.1;
+  font-family: roboto;
 }
 
 .mi-estilo-p {
   line-height: 40px;
   padding: 25px 100px 0px 0px;
   font-size: 20px;
+  font-family: roboto;
 }
 
 .mi-v-snos {
   margin-bottom: 60px;
+  margin-right: 60px;
 }
 .mi-v-snos video {
   border: double black;
@@ -357,25 +373,30 @@ section {
     width: 100vw;
   }
   .mi-f-padd {
-    padding: 0px;
+    padding: 35px;
   }
   .mi-f-padd img {
     height: auto;
   }
   .mi-estilo-h {
-    margin-top: 100px !important;
-    font-weight: 100;
+    margin-top: 40px !important;
+    margin-bottom: 20px;
+    font-weight: 200px;
     font-size: 2rem;
     /*line-height: 1.1;*/
   }
   .mi-estilo-p {
     padding: 0px !important;
-    line-height: 20px;
+    line-height: 25px;
+    font-weight: 200px;
     font-size: 15px;
   }
   .mi-shadow {
     border-radius: 50%;
     box-shadow: 30px -20px rgb(78, 77, 77);
+  }
+  .mi-v-snos {
+    margin-right: 0%;
   }
 }
 
