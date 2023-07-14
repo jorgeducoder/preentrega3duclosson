@@ -1,83 +1,152 @@
 /* trabajando en el main*/
+.img-txt-inicio {
+   /* Contenedor definiendo en el Div una clase */
+   position: relative;
+   width: 100%;
+   height: auto;
+   background-image: url(../images/imgini4.jpg);
 
-  
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   /*padding-right: 0px; no soluciona el scroll a la derecha*/
+
+
+
    .parrafo-centrado {
       color: white;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      h1{
+      width: 70%;
+      height: auto;
+      margin-top: 80px;
+      margin-bottom: 100px;
+      text-align: center;
+      padding: 150px;
+      top: 100px;
+      left: 400px;
+      font-weight: bold;
+      font-family: roboto;
+
+      h1 {
          @extend %parrafo-centrado-h;
       }
+
       p {
          @extend %parrafo-centrado-p;
       }
-      
    }
+}
 
-   /* botones */
-   .btn-grupo {
-      padding-left: 30%;
-      padding-top: 20px;
-   }
+/*position: absolute; */
+/*top: 50%; 
+      left: 50%;
+      transform: translate(-50%, -50%);*/
 
-   .btn-grupo .boton {
-      background-color: transparent;
-      border: 3px solid white;
-      color: white;
-      padding: 12px 26px;
-      text-align: center;
-      display: inline-block;
-      font-size: 14px;
-      font-weight: bold;
-      font-family: roboto;
-      cursor: pointer;
-      border-radius: 30px;
-      justify-content: center;
-      }
-      .btn-grupo .boton:not(:last-child){
-         
-         margin-right: 10px;
-      }
-      
-      .btn-grupo .boton:hover{
-         background-color: white;
-         color: black;
-      }
+
+
+
+/* botones */
+.btn-grupo {
+
+   padding-top: 20px;
+}
+
+.btn-grupo .boton {
+   background-color: transparent;
+   border: 3px solid white;
+   color: white;
+   padding: 12px 26px;
+   text-align: center;
+   display: inline-block;
+   font-size: 14px;
+   font-weight: bold;
+   font-family: roboto;
+   cursor: pointer;
+   border-radius: 30px;
+   justify-content: center;
+}
+
+.btn-grupo .boton:not(:last-child) {
+
+   margin-right: 10px;
+}
+
+.btn-grupo .boton:hover {
+   background-color: white;
+   color: black;
+}
 
 .cuatroiconos {
-               padding: 20px 0px 0px 0px;
-            }
-   
-.cuatroiconos .i2 {
-                   display: inline-block;
-                 }
+   padding: 20px 0px 0px 0px;
+}
 
-.i1{
-   img{
-       &:hover {
-               cursor: pointer;
-           }
-       } 
-   }                 
+.cuatroiconos .i2 {
+   display: inline-block;
+}
+
+.i1 {
+   img {
+      &:hover {
+         cursor: pointer;
+      }
+   }
+}
+
 .i2 {
    padding: 0px 100px 0px 150px;
-} 
+}
 
 
 
 /*agrego estilos para inicio en la media query*/
 @media (max-width: 800px) {
-   .parrafo-centrado {
-      top: 35%;
-      h1{
-         font-size: 2rem; 
-         padding-bottom: 10px;
+
+   .img-txt-inicio {
+      background-image: url(../images/imginiresp.jpg);
+      background-size: cover;
+      padding: 0px;
+
+      .parrafo-centrado {
+         /*top: 35%;*/
+         width: 95%;
+         /*height: 95%;*/
+         /*height: auto; no cambia nada si lo saco*/
+         margin-top: 20px;
+         margin-bottom: 20px;
+         text-align: center;
+         padding: 10px;
+
+         /*top: 20px;
+        left: 20px;*/
+         font-family: 'Times New Roman', Times, serif;
+
+         h1 {
+            font-size: 3rem;
+            padding-bottom: 10px;
+         }
+
+         p {
+            font-size: 25px;
+         }
+
       }
-      p {
-         font-size: 16px;
-      }
-      
+   }
+   .btn-grupo .boton {
+      background-color: white;
+      border: 3px solid black;
+      color: black;
+      font-size: 14px;
+      border: 3px 
+   }
+   .btn-grupo .boton:not(:last-child) {
+
+      margin-right: 5px;
+   }
+   .btn-grupo {
+
+      padding-top: 10px;
+   }
+   .btn-grupo .boton:hover {
+      background-color: transparent;
+      color: black;
    }
 }

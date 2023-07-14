@@ -1,10 +1,14 @@
-.parrafo-centrado h1 {
+.img-txt-inicio .parrafo-centrado h1 {
   font-size: 4rem;
   padding-bottom: 40px;
+  font-weight: bold;
+  font-family: roboto;
 }
 
-.parrafo-centrado p {
-  font-size: 2rem;
+.img-txt-inicio .parrafo-centrado p {
+  font-size: 25px;
+  font-weight: 100;
+  font-family: roboto;
 }
 
 * {
@@ -12,7 +16,7 @@
   padding: 0;
   /*text-decoration: none;*/
   list-style-type: none;
-  font-family: roboto sans-seriff;
+  font-family: roboto opensans;
   /*overflow-x: map-get($inicio-header, oflowx); lo tengo que sacar porque rompe el header en el responsive*/
 }
 
@@ -106,16 +110,36 @@ impotant no aparece la palabra Inicio cuando colapsa*/
   }
 }
 /* trabajando en el main*/
-.parrafo-centrado {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.img-txt-inicio {
+  /* Contenedor definiendo en el Div una clase */
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url(../images/imgini4.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  /*padding-right: 0px; no soluciona el scroll a la derecha*/
 }
+.img-txt-inicio .parrafo-centrado {
+  color: white;
+  width: 70%;
+  height: auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  text-align: center;
+  padding: 150px;
+  top: 100px;
+  left: 400px;
+  font-weight: bold;
+  font-family: roboto;
+}
+/*position: absolute; */
+/*top: 50%; 
+      left: 50%;
+      transform: translate(-50%, -50%);*/
 /* botones */
 .btn-grupo {
-  padding-left: 30%;
   padding-top: 20px;
 }
 
@@ -161,15 +185,47 @@ impotant no aparece la palabra Inicio cuando colapsa*/
 
 /*agrego estilos para inicio en la media query*/
 @media (max-width: 800px) {
-  .parrafo-centrado {
-    top: 35%;
+  .img-txt-inicio {
+    background-image: url(../images/imginiresp.jpg);
+    background-size: cover;
+    padding: 0px;
   }
-  .parrafo-centrado h1 {
-    font-size: 2rem;
+  .img-txt-inicio .parrafo-centrado {
+    /*top: 35%;*/
+    width: 95%;
+    /*height: 95%;*/
+    /*height: auto; no cambia nada si lo saco*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    /*top: 20px;
+    left: 20px;*/
+    font-family: "Times New Roman", Times, serif;
+  }
+  .img-txt-inicio .parrafo-centrado h1 {
+    font-size: 3rem;
     padding-bottom: 10px;
   }
-  .parrafo-centrado p {
-    font-size: 16px;
+  .img-txt-inicio .parrafo-centrado p {
+    font-size: 25px;
+  }
+  .btn-grupo .boton {
+    background-color: white;
+    border: 3px solid black;
+    color: black;
+    font-size: 14px;
+    border: 3px;
+  }
+  .btn-grupo .boton:not(:last-child) {
+    margin-right: 5px;
+  }
+  .btn-grupo {
+    padding-top: 10px;
+  }
+  .btn-grupo .boton:hover {
+    background-color: transparent;
+    color: black;
   }
 }
 /* la experiencia html */
@@ -380,8 +436,8 @@ section {
   }
   .mi-estilo-h {
     margin-top: 40px !important;
-    margin-bottom: 20px;
-    font-weight: 200px;
+    margin-bottom: 25px;
+    font-weight: 400;
     font-size: 2rem;
     /*line-height: 1.1;*/
   }
