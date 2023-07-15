@@ -79,7 +79,7 @@ pongo important no funciona el hover en Inicio*/
     background-color: black;
     width: 70%;
     height: 100vh;
-    opacity: 0.5;
+    opacity: 0.8;
   }
   .el-menu ul li a {
     color: white !important; /* si no pongo el 
